@@ -8,8 +8,8 @@ body {
 }
 
 header {
-    background: #007bff;
-    color: white;
+    background: #415061; // it was#007bff
+    color: grey; // it was white
     padding: 20px;
 }
 
