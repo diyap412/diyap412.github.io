@@ -23,6 +23,16 @@ header p {
     color: #b0b0b0; /* Soft grey */
 }
 
+/* Navbar */
+.navbar {
+    text-align: center;
+}
+
+.logo {
+    max-width: 100px; /* Size of the logo */
+    margin: 0 auto;
+}
+
 /* Buttons */
 .btn {
     display: inline-block;
