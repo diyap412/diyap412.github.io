@@ -1,37 +1,42 @@
-// script.js
-
-// Smooth scrolling animations
 document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll("section");
-    const options = {
-        threshold: 0.3
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-            }
+    // Smooth scrolling for navigation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+                behavior: "smooth"
+            });
         });
-    }, options);
+    });
 
-    sections.forEach(section => observer.observe(section));
-});
+    // Add hover effect to project cards
+    const projects = document.querySelectorAll(".project-card");
+    projects.forEach(card => {
+        card.addEventListener("mouseenter", () => {
+            card.style.transform = "scale(1.05)";
+            card.style.boxShadow = "0px 0px 15px rgba(255, 152, 0, 0.8)";
+        });
+        card.addEventListener("mouseleave", () => {
+            card.style.transform = "scale(1)";
+            card.style.boxShadow = "0px 0px 10px rgba(255, 152, 0, 0.5)";
+        });
+    });
 
-// Contact form submission
-document.getElementById("contact-form").addEventListener("submit", function(event) {
-    event.preventDefault();
+    // Show alert when clicking a project button
+    const projectButtons = document.querySelectorAll(".btn");
+    projectButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            alert("More details coming soon!");
+        });
+    });
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
+    // Dark mode toggle
+    const toggleButton = document.createElement("button");
+    toggleButton.textContent = "Toggle Dark Mode";
+    toggleButton.classList.add("btn");
+    document.body.insertBefore(toggleButton, document.body.firstChild);
 
-    if (name && email && message) {
-        document.getElementById("form-status").innerText = "Message sent successfully!";
-        document.getElementById("form-status").style.color = "green";
-        this.reset();
-    } else {
-        document.getElementById("form-status").innerText = "Please fill out all fields.";
-        document.getElementById("form-status").style.color = "red";
-    }
+    toggleButton.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+    });
 });
