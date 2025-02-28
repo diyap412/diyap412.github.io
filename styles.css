@@ -1,42 +1,38 @@
-/* General Styles */
 body {
-    background-color: #121212; /* Dark background */
-    color: #e0e0e0; /* Light grey text */
-    font-family: 'Orbitron', sans-serif; /* Engineering-style font */
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Orbitron', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Header */
 header {
-    background-color: #1e1e1e; /* Dark grey */
+    background-color: #1e1e1e;
     padding: 20px;
     text-align: center;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
-    color: #ffffff; /* White */
+    color: #ffffff;
 }
 
 header p {
-    color: #b0b0b0; /* Soft grey */
+    color: #b0b0b0;
 }
 
-/* Navbar */
 .navbar {
     text-align: center;
 }
 
 .logo {
-    max-width: 100px; /* Size of the logo */
+    max-width: 100px;
     margin: 0 auto;
 }
 
-/* Buttons */
 .btn {
     display: inline-block;
-    background-color: #333333; /* Dark grey */
+    background-color: #333333;
     color: #ffffff;
     padding: 10px 20px;
     margin: 10px;
@@ -47,18 +43,17 @@ header p {
 }
 
 .btn:hover {
-    background-color: #555555; /* Lighter grey */
+    background-color: #555555;
     transform: scale(1.05);
 }
 
-/* Projects Section */
 #projects {
     padding: 40px;
     text-align: center;
 }
 
 .project-card {
-    background-color: #1e1e1e; /* Dark card */
+    background-color: #1e1e1e;
     padding: 20px;
     margin: 20px auto;
     border-radius: 8px;
@@ -72,7 +67,6 @@ header p {
     border-color: #666;
 }
 
-/* Skills Section */
 .skills-container {
     display: flex;
     flex-wrap: wrap;
@@ -88,7 +82,17 @@ header p {
     font-weight: bold;
 }
 
-/* Footer */
+#skills h2, #contact h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#contact {
+    text-align: center;
+    padding: 40px;
+}
+
 footer {
     background-color: #1e1e1e;
     text-align: center;
