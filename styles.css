@@ -1,86 +1,87 @@
+/* General Styles */
 body {
-    background-color: #121212;
-    color: #f0f0f0;
-    font-family: 'Orbitron', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light grey text */
+    font-family: 'Orbitron', sans-serif; /* Engineering-style font */
     margin: 0;
     padding: 0;
 }
 
+/* Header */
 header {
+    background-color: #1e1e1e; /* Dark grey */
+    padding: 20px;
     text-align: center;
-    padding: 50px 20px;
-    background: linear-gradient(135deg, #1c1c1c, #2c2c2c);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+header h1 {
+    color: #ffffff; /* White */
 }
 
-p {
-    font-size: 1.2rem;
-    color: #ccc;
+header p {
+    color: #b0b0b0; /* Soft grey */
 }
 
-.buttons {
-    margin-top: 20px;
-}
-
+/* Buttons */
 .btn {
     display: inline-block;
-    background: #ff9800;
-    color: black;
-    padding: 12px 20px;
+    background-color: #333333; /* Dark grey */
+    color: #ffffff;
+    padding: 10px 20px;
     margin: 10px;
     text-decoration: none;
-    font-weight: bold;
     border-radius: 5px;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
+    border: 1px solid #666;
 }
 
 .btn:hover {
-    background: #e68900;
-    transform: scale(1.1);
+    background-color: #555555; /* Lighter grey */
+    transform: scale(1.05);
 }
 
-section {
-    padding: 50px 20px;
+/* Projects Section */
+#projects {
+    padding: 40px;
     text-align: center;
 }
 
-h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
 .project-card {
-    background: #1e1e1e;
+    background-color: #1e1e1e; /* Dark card */
     padding: 20px;
     margin: 20px auto;
-    width: 80%;
-    max-width: 600px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(255, 152, 0, 0.5);
+    border-radius: 8px;
+    max-width: 400px;
+    transition: 0.3s;
+    border: 1px solid #333;
 }
 
+.project-card:hover {
+    transform: scale(1.05);
+    border-color: #666;
+}
+
+/* Skills Section */
 .skills-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
 }
 
 .skill {
-    background: #333;
+    background-color: #333;
     padding: 10px 20px;
+    margin: 10px;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px rgba(255, 152, 0, 0.7);
+    text-align: center;
+    font-weight: bold;
 }
 
+/* Footer */
 footer {
+    background-color: #1e1e1e;
     text-align: center;
     padding: 20px;
-    background: #1c1c1c;
-    color: #777;
-    font-size: 0.9rem;
+    margin-top: 40px;
 }
