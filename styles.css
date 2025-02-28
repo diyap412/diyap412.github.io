@@ -1,48 +1,86 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    background-color: #121212;
+    color: #f0f0f0;
+    font-family: 'Orbitron', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
-    text-align: center;
 }
 
 header {
-    background: #415061; // it was #007bff
-    color: grey; // it was white
-    padding: 20px;
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #1c1c1c, #2c2c2c);
 }
 
-header h1 {
-    margin: 0;
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
-header a {
-    color: white;
+p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff9800;
+    color: black;
+    padding: 12px 20px;
+    margin: 10px;
     text-decoration: none;
     font-weight: bold;
-    background: #0056b3;
-    padding: 10px;
-    display: inline-block;
-    margin-top: 10px;
     border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e68900;
+    transform: scale(1.1);
 }
 
 section {
-    padding: 20px;
-    background: white;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 50px 20px;
+    text-align: center;
 }
 
 h2 {
-    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
-.project {
-    background: #eef;
-    padding: 15px;
-    border-radius: 8px;
-    margin-top: 10px;
+.project-card {
+    background: #1e1e1e;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 152, 0, 0.5);
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill {
+    background: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(255, 152, 0, 0.7);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1c1c1c;
+    color: #777;
+    font-size: 0.9rem;
 }
