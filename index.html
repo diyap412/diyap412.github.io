@@ -1,50 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
 <body>
-    <div class="container">
-        <!-- Your current content here (header, section, etc.) -->
-        <header>
-            <div class="navbar">
-                <img src="converted_image.png" alt="Your Logo" class="logo">
-                <nav></nav>
+    <header>
+        <div class="navbar">
+            <img src="converted_image.png" alt="Your Logo" class="logo">
+            <nav>
+                
+            </nav>
+        </div>
+        <div class="header-container">
+            <h1>Diya Patel</h1>
+            <p>Computer Engineer | Software Developer | Hardware and System Design</p>
+            <div class="buttons">
+                <a href="about.html"class="btn">About Me</a>
+                <a href="Diya-Patel-FlowCV-Resume-20250105 (1) (1) (1).pdf" download class="btn">Resume</a>
+                <a href="mailto:diyapatel41205@gmail.com" class="btn">Email Me</a>
+                <a href="https://www.linkedin.com/in/diya-patel-bb1227290/" target="_blank" class="btn">LinkedIn</a>
             </div>
-            <div class="header-container">
-                <h1>Diya Patel</h1>
-                <p>Computer Engineer | Software Developer | Hardware and System Design</p>
-                <div class="buttons">
-                    <a href="about.html" class="btn">About Me</a>
-                    <a href="Diya-Patel-FlowCV-Resume-20250105 (1) (1) (1).pdf" download class="btn">Resume</a>
-                    <a href="mailto:diyapatel41205@gmail.com" class="btn">Email Me</a>
-                    <a href="https://www.linkedin.com/in/diya-patel-bb1227290/" target="_blank" class="btn">LinkedIn</a>
-                </div>
-            </div>
-        </header>
-        
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-card">
-                <h3>Project 1</h3>
-                <p>Description of your project.</p>
-                <a href="https://diyap412.github.io/StockMarketTracker/" target="_blank" class="btn">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Project 2</h3>
-                <p>Description of another project.</p>
-                <button class="btn" onclick="alert('More details coming soon!')">View Project</button>
-            </div>
-        </section>
+        </div>
+    </header>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Stock Market Tracker</h3>
+            <p>This web application allows users to easily track real-time stock prices. By entering a stock symbol (such as AAPL for Apple), the app fetches the latest closing prices from the Alpha Vantage API and displays the data in an intuitive and user-friendly interface. It provides up-to-date financial information and ensures users stay informed about market trends. With an easy-to-use design and real-time data fetching, this project demonstrates my skills in JavaScript, API integration, and responsive web design.</p>
+            <a href="https://diyap412.github.io/StockMarketTracker/" target="_blank" class="btn">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <p>Description of another project.</p>
+            <button class="btn" onclick="alert('More details coming soon!')">View Project</button>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React</div>
+            <div class="skill">Python</div>
+        </div>
+    </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="skills-container">
-                <div class="skill">HTML</div>
-                <div class="skill">CSS</div>
-                <div class="skill">JavaScript</div>
-                <div class="skill">React</div>
-                <div class="skill">Python</div>
-            </div>
-        </section>
-
-        <footer>
-            <p>&copy; 2025 Your Name. All Rights Reserved.</p>
-        </footer>
-    </div>
+    <footer>
+        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+    </footer>
 </body>
+</html>
