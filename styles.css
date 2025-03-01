@@ -1,105 +1,173 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Orbitron', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #1e1e1e;
+    padding: 20px;
     text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #b0b0b0;
 }
 
 /* Navbar */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background: #222;
+    text-align: center;
 }
 
 .logo {
-    height: 60px;
-    width: auto;
+    max-width: 100px;
+    margin: 0 auto;
 }
 
-/* Header Section */
-.header-container {
-    margin-top: 50px;
-}
-
-.buttons .btn {
-    margin: 5px;
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #333333;
+    color: #ffffff;
     padding: 10px 20px;
-    background: #007bff;
-    color: white;
+    margin: 10px;
     text-decoration: none;
     border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    border: 1px solid #666;
+    text-align: center;
 }
 
-/* Projects */
+.btn:hover {
+    background-color: #555555;
+    transform: scale(1.05);
+}
+
+/* Projects Section */
+#projects {
+    padding: 40px;
+    text-align: center;
+}
+
 .project-card {
-    background: white;
+    background-color: #1e1e1e;
     padding: 20px;
     margin: 20px auto;
-    width: 80%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    border-radius: 8px;
+    max-width: 400px;
+    transition: 0.3s;
+    border: 1px solid #333;
 }
 
-/* Chatbot Box */
-#chatbot {
-    position: fixed;
-    bottom: 80px;
-    right: 20px;
-    width: 320px;
-    background: rgba(0, 0, 0, 0.9);
-    color: white;
-    border-radius: 10px;
-    padding: 15px;
-    font-family: Arial, sans-serif;
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
-    display: none; /* Initially hidden */
+.project-card:hover {
+    transform: scale(1.05);
+    border-color: #666;
 }
 
-/* Chat Header */
-#chat-header {
-    font-weight: bold;
+/* Skills Section */
+#skills {
     text-align: center;
-    padding: 10px;
-    border-bottom: 1px solid rgba(0, 255, 255, 0.4);
-    cursor: pointer;
-    background: rgba(0, 255, 255, 0.3);
-    border-radius: 10px 10px 0 0;
+    padding: 40px;
 }
 
-/* Chat Messages */
-#chat-messages {
-    height: 200px;
-    overflow-y: auto;
-    padding: 5px;
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-/* Chat Input */
-#chat-input {
-    width: calc(100% - 10px);
-    padding: 8px;
-    border: none;
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
+.skill {
+    background-color: #333;
+    padding: 10px 20px;
+    margin: 10px;
     border-radius: 5px;
-    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
 }
 
-/* Chatbot Toggle Button */
-#chat-toggle {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: rgba(0, 255, 255, 0.8);
-    border: none;
-    padding: 10px;
+/* About Me Section */
+#about {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #121212;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: auto;
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid #333;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+    object-fit: cover;
+    margin-right: 20px;
+    border: 2px solid #666;
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #b0b0b0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .profile-pic {
+        margin: 0 0 20px 0;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    padding: 40px;
+}
+
+#contact h2, #skills h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
 }
