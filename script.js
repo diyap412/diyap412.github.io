@@ -1,42 +1,58 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Smooth scrolling for navigation
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute("href")).scrollIntoView({
-                behavior: "smooth"
-            });
-        });
+    const chatInput = document.getElementById("chat-input");
+    const chatMessages = document.getElementById("chat-messages");
+    const chatbot = document.getElementById("chatbot");
+    const chatToggle = document.getElementById("chat-toggle");
+
+    const responses = {
+        "hello": "Hi there! 👋 How can I assist you?",
+        "who are you": "I'm your futuristic AI chatbot! 🚀",
+        "what can you do": "I can chat with you! Try asking me something cool. 😃",
+        "how are you": "I'm just a bunch of code, but I'm feeling great! 🤖",
+        "bye": "Goodbye! Hope to chat again soon. 👋"
+    };
+
+    chatInput.addEventListener("keypress", function (e) {
+        if (e.key === "Enter" && chatInput.value.trim() !== "") {
+            let userInput = chatInput.value.toLowerCase();
+            addMessage(userInput, "user");
+            chatInput.value = "";
+
+            setTimeout(() => {
+                showTypingIndicator();
+                setTimeout(() => {
+                    let botReply = responses[userInput] || "Hmm... I don't know the answer to that. 🤔";
+                    removeTypingIndicator();
+                    addMessage(botReply, "ai");
+                }, 1000);
+            }, 500);
+        }
     });
 
-    // Add hover effect to project cards
-    const projects = document.querySelectorAll(".project-card");
-    projects.forEach(card => {
-        card.addEventListener("mouseenter", () => {
-            card.style.transform = "scale(1.05)";
-            card.style.boxShadow = "0px 0px 15px rgba(255, 152, 0, 0.8)";
-        });
-        card.addEventListener("mouseleave", () => {
-            card.style.transform = "scale(1)";
-            card.style.boxShadow = "0px 0px 10px rgba(255, 152, 0, 0.5)";
-        });
-    });
+    function addMessage(text, sender) {
+        let message = document.createElement("div");
+        message.classList.add("message", sender);
+        message.innerText = text;
+        chatMessages.appendChild(message);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
 
-    // Show alert when clicking a project button
-    const projectButtons = document.querySelectorAll(".btn");
-    projectButtons.forEach(button => {
-        button.addEventListener("click", () => {
-            alert("More details coming soon!");
-        });
-    });
+    function showTypingIndicator() {
+        let typingIndicator = document.createElement("div");
+        typingIndicator.id = "typing";
+        typingIndicator.classList.add("message", "ai", "typing");
+        typingIndicator.innerText = "Typing...";
+        chatMessages.appendChild(typingIndicator);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
 
-    // Dark mode toggle
-    const toggleButton = document.createElement("button");
-    toggleButton.textContent = "Toggle Dark Mode";
-    toggleButton.classList.add("btn");
-    document.body.insertBefore(toggleButton, document.body.firstChild);
+    function removeTypingIndicator() {
+        let typingIndicator = document.getElementById("typing");
+        if (typingIndicator) typingIndicator.remove();
+    }
 
-    toggleButton.addEventListener("click", () => {
-        document.body.classList.toggle("dark-mode");
+    // Toggle Chatbot Visibility
+    chatToggle.addEventListener("click", function () {
+        chatbot.style.display = chatbot.style.display === "none" ? "block" : "none";
     });
 });
