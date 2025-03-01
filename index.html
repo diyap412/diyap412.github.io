@@ -12,7 +12,7 @@
         <div class="navbar">
             <img src="converted_image.png" alt="Your Logo" class="logo">
             <nav>
-                
+                <!-- Add any additional navigation if needed -->
             </nav>
         </div>
         <div class="header-container">
@@ -26,12 +26,12 @@
             </div>
         </div>
     </header>
-    
+
     <section id="projects">
         <h2>Projects</h2>
         <div class="project-card">
             <h3>Stock Market Tracker</h3>
-            <p>This web application allows users to easily track real-time stock prices. By entering a stock symbol (such as AAPL for Apple), the app fetches the latest closing prices from the Alpha Vantage API and displays the data in an intuitive and user-friendly interface. It provides up-to-date financial information and ensures users stay informed about market trends. With an easy-to-use design and real-time data fetching, this project demonstrates my skills in JavaScript, API integration, and responsive web design.</p>
+            <p>This web application allows users to easily track real-time stock prices. By entering a stock symbol (such as AAPL for Apple), the app fetches the latest closing prices from the Alpha Vantage API and displays the data in an intuitive and user-friendly interface.</p>
             <a href="https://diyap412.github.io/StockMarketTracker/" target="_blank" class="btn">View Project</a>
         </div>
         <div class="project-card">
@@ -40,7 +40,7 @@
             <button class="btn" onclick="alert('More details coming soon!')">View Project</button>
         </div>
     </section>
-    
+
     <section id="skills">
         <h2>Skills</h2>
         <div class="skills-container">
@@ -52,18 +52,19 @@
         </div>
     </section>
 
-    <!-- AI Chatbot -->
-    <div id="chatbot">
-        <div id="chat-header">🤖 AI Chatbot</div>
-        <div id="chat-messages"></div>
-        <input type="text" id="chat-input" placeholder="Ask me something...">
-    </div>
-
     <footer>
         <p>&copy; 2025 Diya Patel. All Rights Reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Chatbot -->
+    <div id="chatbot">
+        <div id="chat-header">Chat with AI 🤖</div>
+        <div id="chat-messages"></div>
+        <input type="text" id="chat-input" placeholder="Type a message...">
+    </div>
+
     <button id="chat-toggle">💬</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
