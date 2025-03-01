@@ -30,13 +30,21 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Dark mode toggle
+    // Dark mode toggle button
     const toggleButton = document.createElement("button");
     toggleButton.textContent = "Toggle Dark Mode";
     toggleButton.classList.add("btn");
     document.body.insertBefore(toggleButton, document.body.firstChild);
 
+    // Toggle dark mode and light mode
     toggleButton.addEventListener("click", () => {
         document.body.classList.toggle("dark-mode");
+
+        // Change button text based on the mode
+        if (document.body.classList.contains("dark-mode")) {
+            toggleButton.textContent = "Toggle Light Mode";
+        } else {
+            toggleButton.textContent = "Toggle Dark Mode";
+        }
     });
 });
