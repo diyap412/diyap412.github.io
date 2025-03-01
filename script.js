@@ -19,13 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
             chatInput.value = "";
 
             setTimeout(() => {
-                showTypingIndicator();
-                setTimeout(() => {
-                    let botReply = responses[userInput] || "Hmm... I don't know the answer to that. 🤔";
-                    removeTypingIndicator();
-                    addMessage(botReply, "ai");
-                }, 1000);
-            }, 500);
+                let botReply = responses[userInput] || "Hmm... I don't know the answer to that. 🤔";
+                addMessage(botReply, "ai");
+            }, 1000);
         }
     });
 
@@ -35,20 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
         message.innerText = text;
         chatMessages.appendChild(message);
         chatMessages.scrollTop = chatMessages.scrollHeight;
-    }
-
-    function showTypingIndicator() {
-        let typingIndicator = document.createElement("div");
-        typingIndicator.id = "typing";
-        typingIndicator.classList.add("message", "ai", "typing");
-        typingIndicator.innerText = "Typing...";
-        chatMessages.appendChild(typingIndicator);
-        chatMessages.scrollTop = chatMessages.scrollHeight;
-    }
-
-    function removeTypingIndicator() {
-        let typingIndicator = document.getElementById("typing");
-        if (typingIndicator) typingIndicator.remove();
     }
 
     // Toggle Chatbot Visibility
