@@ -1,7 +1,54 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #222;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+}
+
+/* Header Section */
+.header-container {
+    margin-top: 50px;
+}
+
+.buttons .btn {
+    margin: 5px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Projects */
+.project-card {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
 /* Chatbot Box */
 #chatbot {
     position: fixed;
-    bottom: 20px;
+    bottom: 80px;
     right: 20px;
     width: 320px;
     background: rgba(0, 0, 0, 0.9);
@@ -28,7 +75,6 @@
 #chat-messages {
     height: 200px;
     overflow-y: auto;
-    margin-top: 10px;
     padding: 5px;
 }
 
@@ -41,33 +87,6 @@
     color: white;
     border-radius: 5px;
     margin-top: 10px;
-    display: block;
-}
-
-/* User & AI Messages */
-.message {
-    padding: 8px;
-    margin: 5px 0;
-    border-radius: 5px;
-    max-width: 80%;
-    word-wrap: break-word;
-}
-
-.user {
-    background: rgba(0, 255, 255, 0.3);
-    text-align: right;
-    margin-left: auto;
-}
-
-.ai {
-    background: rgba(255, 255, 255, 0.2);
-    text-align: left;
-}
-
-/* Typing Animation */
-.typing {
-    font-style: italic;
-    color: rgba(255, 255, 255, 0.6);
 }
 
 /* Chatbot Toggle Button */
