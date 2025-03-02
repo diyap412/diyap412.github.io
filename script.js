@@ -13,40 +13,38 @@ document.addEventListener("DOMContentLoaded", function () {
     const projects = document.querySelectorAll(".project-card");
     projects.forEach(card => {
         card.addEventListener("mouseenter", () => {
-            card.classList.add("hover-effect");
+            card.style.transform = "scale(1.05)";
+            card.style.boxShadow = "0px 0px 15px rgba(255, 152, 0, 0.8)";
         });
         card.addEventListener("mouseleave", () => {
-            card.classList.remove("hover-effect");
+            card.style.transform = "scale(1)";
+            card.style.boxShadow = "0px 0px 10px rgba(255, 152, 0, 0.5)";
         });
     });
 
-    // Show alert only for 'coming soon' projects
-    document.querySelectorAll(".btn[data-coming-soon]").forEach(button => {
-        button.addEventListener("click", (e) => {
-            e.preventDefault();
+    // Show alert when clicking a project button
+    const projectButtons = document.querySelectorAll(".btn");
+    projectButtons.forEach(button => {
+        button.addEventListener("click", () => {
             alert("More details coming soon!");
         });
     });
 
-    // Dark mode toggle
+    // Dark mode toggle button
     const toggleButton = document.createElement("button");
     toggleButton.textContent = "Toggle Dark Mode";
-    toggleButton.classList.add("btn", "dark-mode-toggle");
+    toggleButton.classList.add("btn");
+    document.body.insertBefore(toggleButton, document.body.firstChild);
 
-    // Add button inside the navbar
-    document.querySelector(".navbar").appendChild(toggleButton);
-
-    // Load dark mode preference
-    if (localStorage.getItem("darkMode") === "enabled") {
-        document.body.classList.add("dark-mode");
-        toggleButton.textContent = "Toggle Light Mode";
-    }
-
-    // Toggle dark mode
+    // Toggle dark mode and light mode
     toggleButton.addEventListener("click", () => {
         document.body.classList.toggle("dark-mode");
-        const isDark = document.body.classList.contains("dark-mode");
-        toggleButton.textContent = isDark ? "Toggle Light Mode" : "Toggle Dark Mode";
-        localStorage.setItem("darkMode", isDark ? "enabled" : "disabled");
+
+        // Change button text based on the mode
+        if (document.body.classList.contains("dark-mode")) {
+            toggleButton.textContent = "Toggle Light Mode";
+        } else {
+            toggleButton.textContent = "Toggle Dark Mode";
+        }
     });
 });
