@@ -3,63 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="icon" type="image/png" href="converted_image.png"> <!-- Updated favicon line -->
+    <title>Project 1</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div class="navbar">
             <img src="converted_image.png" alt="Your Logo" class="logo">
             <nav>
-                
+                <a href="index.html" class="btn">Home</a>
             </nav>
         </div>
-        <div class="header-container">
-            <h1>Diya Patel</h1>
-            <p>Computer Engineer | Software Developer | Hardware and System Design</p>
-            <div class="buttons">
-                <a href="about.html" class="btn">About Me</a>
-                <a href="recentlyupdated_resume.pdf" download class="btn">Resume</a>
-                <a href="mailto:diyapatel41205@gmail.com" class="btn">Email Me</a>
-                <a href="https://www.linkedin.com/in/diya-patel-bb1227290/" target="_blank" class="btn">LinkedIn</a>
-            </div>
-        </div>
     </header>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>Stock Market Tracker</h3>
-            <p>This web application allows users to easily track real-time stock prices. By entering a stock symbol (such as AAPL for Apple), the app fetches the latest closing prices from the Alpha Vantage API and displays the data in an intuitive and user-friendly interface.</p>
-            <!-- Replace the button with the link to your project -->
-            <a href="https://diyap412.github.io/StockMarketTracker/" target="_blank" class="btn">View Project</a>
-            <a href="project1.html" target="_blank" class="btn">Project Description</a>
 
-        </div>
-        <div class="project-card">
-            <h3>Project 2</h3>
-            <p>Description of another project.</p>
-            <button class="btn" onclick="alert('More details coming soon!')">View Project</button>
-            <a href="" target="_blank" class="btn">Project Description</a>
+    <section id="project-1">
+        <h2>Project 1</h2>
+        <div class="project-container">
+            <div class="about-text">
+                <h3>Overview / Summary</h3>
+                <p>
+                    This is a simple but fully functional web app that tracks real-time stock prices and related news. I built it from scratch using only HTML, CSS, and JavaScript — no frameworks, no libraries. You type in a stock ticker like “AAPL” or “TSLA,” and it shows the current price, daily change, and some related news articles.
+                </p>
 
-        </div>
-    </section>
-    
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">React</div>
-            <div class="skill">Python</div>
-            <div class="skill">MatLab</div>
-            <div class="skill">AutoCad</div>
-            <div class="skill">SQL</div>
-            <div class="skill">LT Spice</div>
-            <div class="skill">Solid Works</div>
+                <h3>Process & Methodology</h3>
+                <ul>
+                    <li>Designed layout using HTML and CSS</li>
+                    <li>Added JavaScript to handle input and fetch stock data</li>
+                    <li>Used modular functions for data handling, rendering, and formatting</li>
+                    <li>Tested live in browser using <code>console.log()</code> for debugging</li>
+                    <li>Used Git for version control — build, test, fix, repeat</li>
+                </ul>
+
+                <h3>Key Features</h3>
+                <ul>
+                    <li>🔍 Stock search bar</li>
+                    <li>📈 Live stock data (price, open/close, volume, change %)</li>
+                    <li>📰 Related financial news headlines</li>
+                    <li>📱 Fully responsive layout</li>
+                    <li>❌ Error handling for invalid symbols or network issues</li>
+                </ul>
+
+                <h3>Results & Achievements</h3>
+                <ul>
+                    <li>Stock data loads in under 2 seconds</li>
+                    <li>Formatted API responses for better UX</li>
+                    <li>Modular structure allows for easy feature expansion</li>
+                    <li>No backend — fully browser-based</li>
+                </ul>
+
+                <h3>Learnings & Growth</h3>
+                <ul>
+                    <li>Improved with async JavaScript (async/await, fetch)</li>
+                    <li>Structured vanilla JS into readable, modular components</li>
+                    <li>Practiced responsive design using Flexbox and media queries</li>
+                    <li>Debugged network-based edge cases</li>
+                </ul>
+
+                <h3>Visuals</h3>
+                <p>Insert screenshots or graphs related to the project here.</p>
+            </div>
         </div>
     </section>
 
@@ -68,6 +70,5 @@
     </footer>
 
     <script src="script.js"></script>
-    
 </body>
 </html>
