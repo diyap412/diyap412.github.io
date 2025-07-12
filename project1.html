@@ -2,71 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>StandOutAI</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 1</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Merriweather:ital,wght@1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
         <div class="navbar">
-            <img src="converted_image.png" alt="Your Logo" class="logo">
+            <img src="logo.png" alt="Logo" class="logo">
             <nav>
-                <a href="index.html" class="btn">Home</a>
+                <a href="#about" class="btn">About</a>
+                <a href="#projects" class="btn">Projects</a>
             </nav>
         </div>
     </header>
 
-    <section id="project-1">
-        <h2>Project 1</h2>
-        <div class="project-container">
-            <div class="about-text">
-                <h3>Overview / Summary</h3>
-                <p>
-                    This is a simple but fully functional web app that tracks real-time stock prices and related news. I built it from scratch using only HTML, CSS, and JavaScript — no frameworks, no libraries. You type in a stock ticker like “AAPL” or “TSLA,” and it shows the current price, daily change, and some related news articles.
-                </p>
+    <h2 id="projects" class="fade-in">Featured Projects</h2>
 
-                <h3>Process & Methodology</h3>
-                <ul>
-                    <li>Designed layout using HTML and CSS</li>
-                    <li>Added JavaScript to handle input and fetch stock data</li>
-                    <li>Used modular functions for data handling, rendering, and formatting</li>
-                    <li>Tested live in browser using <code>console.log()</code> for debugging</li>
-                    <li>Used Git for version control — build, test, fix, repeat</li>
-                </ul>
-
-                <h3>Key Features</h3>
-                <ul>
-                    <li>🔍 Stock search bar</li>
-                    <li>📈 Live stock data (price, open/close, volume, change %)</li>
-                    <li>📰 Related financial news headlines</li>
-                    <li>📱 Fully responsive layout</li>
-                    <li>❌ Error handling for invalid symbols or network issues</li>
-                </ul>
-
-                <h3>Results & Achievements</h3>
-                <ul>
-                    <li>Stock data loads in under 2 seconds</li>
-                    <li>Formatted API responses for better UX</li>
-                    <li>Modular structure allows for easy feature expansion</li>
-                    <li>No backend — fully browser-based</li>
-                </ul>
-
-                <h3>Learnings & Growth</h3>
-                <ul>
-                    <li>Improved with async JavaScript (async/await, fetch)</li>
-                    <li>Structured vanilla JS into readable, modular components</li>
-                    <li>Practiced responsive design using Flexbox and media queries</li>
-                    <li>Debugged network-based edge cases</li>
-                </ul>
-
-                <h3>Visuals</h3>
-                <p>Insert screenshots or graphs related to the project here.</p>
+    <div class="project-container fade-in">
+        <div class="about-text">
+            <h3>Project Alpha</h3>
+            <p>A powerful framework for streamlined deployment and experimentation.</p>
+            <ul>
+                <li>Optimized for performance</li>
+                <li>Modular structure</li>
+                <li>Cross-platform ready</li>
+            </ul>
+            <a href="#" class="btn">View More</a>
+            <div class="extra-info" style="display: none;">
+                <p>Extended project details appear here when toggled.</p>
             </div>
         </div>
-    </section>
+    </div>
 
     <footer>
-        <p>&copy; 2025 Diya Patel. All Rights Reserved.</p>
+        &copy; 2025 StandOutAI. Built by Diya.
     </footer>
 
     <script src="script.js"></script>
