@@ -1,13 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const toggleButton = document.getElementById("dark-mode-toggle");
-
-  toggleButton.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-    toggleButton.textContent = document.body.classList.contains("dark-mode")
-      ? "Toggle Light Mode"
-      : "Toggle Dark Mode";
-  });
-
   document.querySelectorAll(".project-alert").forEach(button => {
     button.addEventListener("click", () => {
       alert("More details coming soon!");
