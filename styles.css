@@ -69,10 +69,6 @@ header {
   background-color: #1e40af;
 }
 
-#dark-mode-toggle {
-  margin-top: 0.5rem;
-}
-
 section {
   max-width: 900px;
   margin: 3rem auto;
@@ -195,57 +191,4 @@ footer {
   .buttons {
     justify-content: center;
   }
-}
-
-/* Dark Mode */
-
-body.dark-mode {
-  background-color: #121a2e;
-  color: #cbd5e1;
-}
-
-body.dark-mode header {
-  background-color: #0f1a36;
-  box-shadow: 0 2px 6px rgba(15, 26, 54, 0.9);
-  color: #cbd5e1;
-}
-
-body.dark-mode .btn {
-  background-color: #1e40af;
-  color: #cbd5e1;
-}
-
-body.dark-mode .btn:hover {
-  background-color: #2563eb;
-}
-
-body.dark-mode section {
-  color: #d1d5db;
-}
-
-body.dark-mode .project-card {
-  background-color: #1a2a4c;
-  box-shadow: 0 2px 10px rgba(37, 99, 235, 0.9);
-  color: #cbd5e1;
-}
-
-body.dark-mode .skills-container .skill {
-  background-color: #2563eb;
-  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.7);
-  color: white;
-}
-
-body.dark-mode .about-container {
-  background-color: #1a2a4c;
-  box-shadow: 0 2px 10px rgba(37, 99, 235, 0.9);
-}
-
-body.dark-mode .about-text {
-  color: #cbd5e1;
-}
-
-body.dark-mode footer {
-  background-color: #0f1a36;
-  color: #94a3b8;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
 }
