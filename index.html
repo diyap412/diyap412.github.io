@@ -1,69 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="icon" type="image/png" href="converted_image.png"> <!-- Updated favicon line -->
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <link rel="icon" type="image/png" href="converted_image.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <img src="converted_image.png" alt="Your Logo" class="logo">
-            <nav>
-                
-            </nav>
-        </div>
-        <div class="header-container">
-            <h1>Diya Patel</h1>
-            <p>Computer Engineer | Software Developer | Hardware and System Design</p>
-            <div class="buttons">
-                <a href="about.html" class="btn">About Me</a>
-                <a href="recentlyupdated_resume.pdf" download class="btn">Resume</a>
-                <a href="mailto:diyapatel41205@gmail.com" class="btn">Email Me</a>
-                <a href="https://www.linkedin.com/in/diya-patel-bb1227290/" target="_blank" class="btn">LinkedIn</a>
-            </div>
-        </div>
-    </header>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>Stock Market Tracker</h3>
-            <p>This web app lets you check live stock prices. When you type in a stock symbol (like AAPL), the app pulls the latest closing price from the internet and shows it on the screen in a clean, easy-to-read layout.</p>
-            <!-- Replace the button with the link to your project -->
-            <a href="https://diyap412.github.io/StockMarketTracker/" target="_blank" class="btn">View Project</a>
-            <a href="project1.html" target="_blank" class="btn">Project Description</a>
-        </div>
-        <div class="project-card">
-            <h3>Project name:</h3>
-            <p>Description of another project.</p>
-            <button class="btn" onclick="alert('More details coming soon!')">View Project</button>
-            <a href="" target="_blank" class="btn">Project Description</a>
+  <header>
+    <div class="navbar">
+      <img src="converted_image.png" alt="Your Logo" class="logo" />
+    </div>
+    <div class="header-container">
+      <h1>Diya Patel</h1>
+      <p>Computer Engineer | Software Developer | Hardware and System Design</p>
+      <div class="buttons">
+        <a href="about.html" class="btn">About Me</a>
+        <a href="recentlyupdated_resume.pdf" download class="btn">Resume</a>
+        <a href="mailto:diyapatel41205@gmail.com" class="btn">Email Me</a>
+        <a href="https://www.linkedin.com/in/diya-patel-bb1227290/" target="_blank" class="btn">LinkedIn</a>
+      </div>
+      <button id="dark-mode-toggle" class="btn">Toggle Dark Mode</button>
+    </div>
+  </header>
 
-        </div>
-    </section>
-    
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">React</div>
-            <div class="skill">Python</div>
-            <div class="skill">MatLab</div>
-            <div class="skill">AutoCad</div>
-            <div class="skill">SQL</div>
-            <div class="skill">LT Spice</div>
-            <div class="skill">Solid Works</div>
-        </div>
-    </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Stock Market Tracker</h3>
+      <p>This web application allows users to easily track real-time stock prices. By entering a stock symbol (such as AAPL for Apple), the app fetches the latest closing prices from the Alpha Vantage API and displays the data in an intuitive and user-friendly interface.</p>
+      <a href="https://diyap412.github.io/StockMarketTracker/" target="_blank" class="btn">View Project</a>
+      <a href="project1.html" target="_blank" class="btn">Project Description</a>
+    </div>
+    <div class="project-card">
+      <h3>Project 2</h3>
+      <p>Description of another project.</p>
+      <button class="btn project-alert">View Project</button>
+      <a href="#" target="_blank" class="btn">Project Description</a>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Diya Patel. All Rights Reserved.</p>
-    </footer>
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Python</div>
+      <div class="skill">MatLab</div>
+      <div class="skill">AutoCad</div>
+      <div class="skill">SQL</div>
+      <div class="skill">LT Spice</div>
+      <div class="skill">Solid Works</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Diya Patel. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
