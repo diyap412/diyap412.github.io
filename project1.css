@@ -86,17 +86,17 @@ section#project-1 {
     margin-left: 20px;
 }
 
-/* 👇 Font fix for Visuals paragraph */
-.about-text p:last-of-type {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
-    color: #333;
-}
-
 footer {
     background-color: #0a0a0a;
     color: white;
     text-align: center;
     padding: 20px 0;
     margin-top: 60px;
+}
+
+/* 🎯 Consistent font styling for "Visuals" paragraph */
+.visuals-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #333;
 }
