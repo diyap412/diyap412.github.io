@@ -1,13 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const buttons = document.querySelectorAll(".btn");
+    const toggleBtn = document.getElementById("toggleDetails");
+    const projectDetails = document.getElementById("projectDetails");
 
-    buttons.forEach(btn => {
-        btn.addEventListener("mouseover", () => {
-            btn.style.transform = "scale(1.05)";
-        });
+    toggleBtn.addEventListener("click", () => {
 
-        btn.addEventListener("mouseout", () => {
-            btn.style.transform = "scale(1)";
-        });
+        if (projectDetails.style.display === "none" || projectDetails.style.display === "") {
+            projectDetails.style.display = "flex";
+        } else {
+            projectDetails.style.display = "none";
+        }
     });
+
 });
