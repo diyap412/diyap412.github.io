@@ -50,14 +50,29 @@ section#project-1 {
 
 .project-container {
   display: flex;
-  flex-direction: row;
   gap: 30px;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: center; /* Vertically centers visuals to .about-text */
 }
 
 .about-text {
   flex: 1 1 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space out the top, middle, bottom */
+  min-height: 400px; /* Ensures enough height for vertical centering */
+}
+
+.top-text {
+  /* default flow */
+}
+
+.middle-text {
+  align-self: center; /* vertically center the middle-text inside about-text */
+}
+
+.bottom-text {
+  /* default flow */
 }
 
 .about-text h3 {
@@ -100,11 +115,16 @@ footer {
   margin-top: 60px;
 }
 
+/* Responsive - stack layout on smaller screens */
 @media (max-width: 700px) {
   .project-container {
     flex-direction: column;
+    align-items: flex-start;
   }
   .project-visuals {
     margin-top: 20px;
+  }
+  .about-text {
+    min-height: auto;
   }
 }
