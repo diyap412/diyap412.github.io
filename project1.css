@@ -63,7 +63,9 @@ section#project-1 {
   min-height: 400px;
 }
 
-.top-text, .middle-text, .bottom-text {
+.top-text,
+.middle-text,
+.bottom-text {
   margin-bottom: 20px;
 }
 
@@ -97,14 +99,14 @@ section#project-1 {
 }
 
 .visuals-label {
-  border: 2px solid black;
-  padding: 8px 16px;
+  font-size: 22px;
   font-weight: bold;
-  background-color: #ffffff;
-  text-align: center;
+  color: #111;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 6px;
   width: 100%;
   max-width: 300px;
-  box-sizing: border-box;
+  text-align: left;
 }
 
 .project-img {
@@ -137,7 +139,8 @@ footer {
     margin-top: 20px;
   }
 
-  .project-img, .visuals-label {
+  .project-img,
+  .visuals-label {
     max-width: 100%;
   }
 
