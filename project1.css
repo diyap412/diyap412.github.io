@@ -93,10 +93,3 @@ footer {
     padding: 20px 0;
     margin-top: 60px;
 }
-
-/* 🎯 Consistent font styling for "Visuals" paragraph */
-.visuals-text {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
-    color: #333;
-}
