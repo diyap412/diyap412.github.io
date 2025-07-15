@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9f9f9;
+  background-color: #f0f3f8;
   color: #333;
   line-height: 1.6;
 }
@@ -44,7 +44,7 @@ nav .btn:hover {
 
 section#project-1 {
   padding: 40px 20px;
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
 }
 
@@ -52,27 +52,23 @@ section#project-1 {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-  align-items: center; /* Vertically centers visuals to .about-text */
+  align-items: center;
 }
 
 .about-text {
   flex: 1 1 500px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Space out the top, middle, bottom */
-  min-height: 400px; /* Ensures enough height for vertical centering */
+  justify-content: space-between;
+  min-height: 400px;
 }
 
-.top-text {
-  /* default flow */
+.top-text, .middle-text, .bottom-text {
+  margin-bottom: 20px;
 }
 
 .middle-text {
-  align-self: center; /* vertically center the middle-text inside about-text */
-}
-
-.bottom-text {
-  /* default flow */
+  align-self: center;
 }
 
 .about-text h3 {
@@ -95,16 +91,29 @@ section#project-1 {
 .project-visuals {
   flex: 1 1 300px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  gap: 10px;
+}
+
+.visuals-label {
+  border: 2px solid black;
+  padding: 8px 16px;
+  font-weight: bold;
+  background-color: #ffffff;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
 }
 
 .project-img {
-  max-width: 100%;
-  max-height: 300px;
+  width: 100%;
+  max-width: 300px;
+  border: 2px solid #e53935;
   border-radius: 8px;
   object-fit: contain;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 footer {
@@ -115,15 +124,23 @@ footer {
   margin-top: 60px;
 }
 
-/* Responsive - stack layout on smaller screens */
+/* Responsive */
 @media (max-width: 700px) {
   .project-container {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .project-visuals {
+    width: 100%;
+    align-items: center;
     margin-top: 20px;
   }
+
+  .project-img, .visuals-label {
+    max-width: 100%;
+  }
+
   .about-text {
     min-height: auto;
   }
