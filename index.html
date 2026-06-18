@@ -1,219 +1,91 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Diya Patel | Computer Engineering Portfolio</title>
-
-<link rel="icon" href="converted_image.png">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="styles.css">
-
-<script defer src="script.js"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Diya Patel | Computer Engineering Portfolio</title>
+    <link rel="icon" href="converted_image.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
-
 <body>
 
-<nav>
-
-<div class="logo">
-
-Diya Patel
-
-</div>
-
-<div class="nav-links">
-
-<a href="#about">About</a>
-
-<a href="#projects">Projects</a>
-
-<a href="#skills">Skills</a>
-
-<a href="#contact">Contact</a>
-
-</div>
-
-</nav>
-
-<header class="hero">
-
-<div class="hero-text">
-
-<h1>
-
-Computer Engineering Student
-
-</h1>
-
-<p>
-
-Building software, hardware, and embedded systems that solve real-world problems.
-
-</p>
-
-<div class="hero-buttons">
-
-<a href="#projects" class="btn">
-
-View Projects
-
-</a>
-
-<a href="diyaresume.pdf" class="btn outline">
-
-Resume
-
-</a>
-
-</div>
-
-</div>
-
-<img src="recent_diya.jpg" class="hero-image">
-
-</header>
-
-<section id="about">
-
-<h2>About Me</h2>
-
-<div class="card">
-
-<p>
-
-Hi, I'm Diya Patel, a Computer Engineering student at UIC interested in software development, embedded systems, and system design.
-
-</p>
-
-<p>
-
-I enjoy building projects that connect hardware and software together to solve real-world problems.
-
-</p>
-
-</div>
-
-</section>
-
-<section id="projects">
-
-<h2>Projects</h2>
-
-<div class="project-grid">
-
-<div class="card">
-
-<h3>📈 Stock Market Tracker</h3>
-
-<p>
-
-Track real-time stock prices, visualize trends, and read related news.
-
-</p>
-
-<a href="https://diyap412.github.io/StockMarketTracker/" target="_blank" class="btn">
-
-Live Demo
-
-</a>
-
-<a href="project1.html" class="btn outline">
-
-Description
-
-</a>
-
-</div>
-
-<div class="card">
-
-<h3>🚧 Project Coming Soon</h3>
-
-<p>
-
-A new project will be added here soon.
-
-</p>
-
-<button class="btn project-alert">
-
-Coming Soon
-
-</button>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="skills">
-
-<h2>Technical Skills</h2>
-
-<div class="skills-container">
-
-<div class="skill">C</div>
-
-<div class="skill">C++</div>
-
-<div class="skill">Python</div>
-
-<div class="skill">HTML</div>
-
-<div class="skill">CSS</div>
-
-<div class="skill">JavaScript</div>
-
-<div class="skill">Git</div>
-
-<div class="skill">Embedded Systems</div>
-
-</div>
-
-</section>
-
-<section id="contact">
-
-<h2>Contact</h2>
-
-<div class="hero-buttons">
-
-<a href="mailto:diyapatel41205@gmail.com" class="btn">
-
-Email
-
-</a>
-
-<a href="https://www.linkedin.com/in/diya-patel-bb1227290/" target="_blank" class="btn">
-
-LinkedIn
-
-</a>
-
-</div>
-
-</section>
-
-<footer>
-
-© 2026 Diya Patel
-
-</footer>
+    <nav>
+        <div class="logo">Diya Patel</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="diyaresume.pdf" target="_blank">CV / Resume</a>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        
+        <aside class="sidebar">
+            <img src="recent_diya.jpg" alt="Diya Patel" class="sidebar-avatar">
+            <h3 class="sidebar-name">Diya Patel</h3>
+            <p class="sidebar-bio">Computer Engineering Student at UIC</p>
+            
+            <ul class="sidebar-links">
+                <li>📍 Chicago, IL</li>
+                <li>🏢 UIC</li>
+                <li>✉️ <a href="mailto:diyapatel41205@gmail.com">Email</a></li>
+                <li>🔗 <a href="https://www.linkedin.com/in/diya-patel-bb1227290/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </aside>
+
+        <main class="content-area">
+            
+            <section id="about">
+                <h1>Computer Engineering Student</h1>
+                <p>
+                    Hi, I'm Diya Patel, a Computer Engineering student at UIC interested in software development, embedded systems, and system design. 
+                    I enjoy building projects that connect hardware and software together to solve real-world problems.
+                </p>
+                <p>
+                    Building software, hardware, and embedded systems that solve real-world problems.
+                </p>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+                
+                <div class="project-item">
+                    <h3>📈 Stock Market Tracker</h3>
+                    <p>Track real-time stock prices, visualize trends, and read related news.</p>
+                    <div class="project-links">
+                        <a href="https://diyap412.github.io/StockMarketTracker/" target="_blank">Live Demo</a> • 
+                        <a href="project1.html">Project Description</a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <h3>🚧 Project Coming Soon</h3>
+                    <p>A new project will be added here soon connecting hardware and embedded layouts.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-alert">Notify Me</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2>Technical Skills</h2>
+                <ul class="academic-skills-list">
+                    <li><strong>Languages:</strong> C, C++, Python, HTML, CSS, JavaScript</li>
+                    <li><strong>Specializations:</strong> Embedded Systems, System Design, Git</li>
+                </ul>
+            </section>
+
+        </main>
+    </div>
+
+    <footer>
+        © 2026 Diya Patel • Powered by Clean Academic Layout
+    </footer>
 
 </body>
-
 </html>
