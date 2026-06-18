@@ -4,66 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1 | Stock Tracker</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="project1-styles.css">
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <img src="converted_image.png" alt="Logo" class="logo">
-            <nav>
-                <a href="index.html" class="btn">Home</a>
-            </nav>
+
+    <nav>
+        <div class="logo-container">
+            <img src="converted_image.png" alt="Logo" class="logo-img">
+            <span class="logo-text">Diya Patel</span>
         </div>
-    </header>
-
-    <section id="project-1">
-        <h2>Project 1: Real-Time Stock Tracker</h2>
-        <div class="project-container">
-            <div class="about-text">
-                <h3>Overview/Summary</h3>
-                <p>This app tracks stock prices and related financial news in real time. It’s built with plain HTML, CSS, and JavaScript for simplicity and speed. Users enter a stock symbol to get the latest data and news.</p>
-
-                <h3>Process & Methodology</h3>
-                <ul>
-                    <li>Used semantic HTML to create a clear and organized layout.</li>
-                    <li>Built modular JavaScript functions to handle API requests and update the UI.</li>
-                    <li>Applied CSS Flexbox for a responsive design that works on all screen sizes.</li>
-                    <li>Iterative testing and debugging using Git and browser dev tools.</li>
-                </ul>
-
-                <h3>Key Features/Deliverables</h3>
-                <ul>
-                    <li>🔍 Search bar for stock symbols</li>
-                    <li>📈 Real-time price data</li>
-                    <li>📰 Shows company-specific news feed</li>
-                    <li>📱 Fully responsive</li>
-                    <li>❌ Handles invalid inputs and API errors</li>
-                </ul>
-
-                <h3>Results & Achievements</h3>
-                <ul>
-                    <li>Data loads in under 2 seconds</li>
-                    <li>Zero frameworks used</li>
-                    <li>Modular and readable code designed for easy scaling</li>
-                </ul>
-
-                <h3>Learnings & Growth</h3>
-                <ul>
-                    <li>Mastered fetch and async/await</li>
-                    <li>Enhanced skills in front-end structure and responsive design</li>
-                    <li>Learned clean code practices without relying on frameworks</li>
-                </ul>
-
-                <h3>Visuals</h3>
-                <img src="projectvisual1.png" alt="Stock Tracker Screenshot" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 8px;">
-            </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#skills">Skills</a>
         </div>
-    </section>
+    </nav>
+
+    <div class="main-container">
+        
+        <aside class="sidebar">
+            <img src="recent_diya.jpg" alt="Diya Patel" class="sidebar-avatar">
+            <h3 class="sidebar-name">Diya Patel</h3>
+            <p class="sidebar-bio">Computer Engineering Student at UIC</p>
+            
+            <ul class="sidebar-links">
+                <li>📍 Chicago, IL</li>
+                <li>🏢 UIC</li>
+                <li>✉️ <a href="mailto:diyapatel41205@gmail.com">Email</a></li>
+                <li>🔗 <a href="https://www.linkedin.com/in/diya-patel-bb1227290/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </aside>
+
+        <main class="content-area">
+            <section id="project-1">
+                <h1>Project 1: Real-Time Stock Tracker</h1>
+                
+                <div class="project-content">
+                    <h2>Overview / Summary</h2>
+                    <p>This app tracks stock prices and related financial news in real time. It’s built with plain HTML, CSS, and JavaScript for simplicity and speed. Users enter a stock symbol to get the latest data and news.</p>
+
+                    <h2>Process & Methodology</h2>
+                    <ul class="academic-list">
+                        <li>Used semantic HTML to create a clear and organized layout.</li>
+                        <li>Built modular JavaScript functions to handle API requests and update the UI.</li>
+                        <li>Applied CSS Flexbox for a responsive design that works on all screen sizes.</li>
+                        <li>Iterative testing and debugging using Git and browser dev tools.</li>
+                    </ul>
+
+                    <h2>Key Features & Deliverables</h2>
+                    <ul class="academic-list">
+                        <li>🔍 Search bar for stock symbols</li>
+                        <li>📈 Real-time price data</li>
+                        <li>📰 Shows company-specific news feed</li>
+                        <li>📱 Fully responsive</li>
+                        <li>❌ Handles invalid inputs and API errors</li>
+                    </ul>
+
+                    <h2>Results & Achievements</h2>
+                    <ul class="academic-list">
+                        <li>Data loads in under 2 seconds</li>
+                        <li>Zero frameworks used</li>
+                        <li>Modular and readable code designed for easy scaling</li>
+                    </ul>
+
+                    <h2>Learnings & Growth</h2>
+                    <ul class="academic-list">
+                        <li>Mastered fetch and async/await</li>
+                        <li>Enhanced skills in front-end structure and responsive design</li>
+                        <li>Learned clean code practices without relying on frameworks</li>
+                    </ul>
+
+                    <h2>Visuals</h2>
+                    <div class="visuals-container">
+                        <img src="projectvisual1.png" alt="Stock Tracker Screenshot" class="project-display-img">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 
     <footer>
-        <p>&copy; 2025 Diya Patel. All Rights Reserved.</p>
+        © 2026 Diya Patel • Powered by Clean Academic Layout
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
