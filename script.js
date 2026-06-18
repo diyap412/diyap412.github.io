@@ -1,10 +1,10 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded",()=>{
 
 document.querySelectorAll(".project-alert")
 
-.forEach(button => {
+.forEach(button=>{
 
-button.addEventListener("click", () => {
+button.addEventListener("click",()=>{
 
 alert("New project coming soon!");
 
