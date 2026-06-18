@@ -12,7 +12,7 @@ body {
     line-height: 1.6;
 }
 
-/* --- Top Navigation & Fixed Logo Adjustment --- */
+/* --- Top Navigation --- */
 nav {
     display: flex;
     justify-content: space-between;
@@ -23,20 +23,7 @@ nav {
     background: white;
 }
 
-.logo-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-/* Fixed the large image scale issue here */
-.logo-img {
-    height: 24px; 
-    width: auto;
-    object-fit: contain;
-}
-
-.logo-text {
+.logo {
     font-size: 18px;
     font-weight: 700;
     color: #222222;
@@ -110,7 +97,7 @@ nav {
 }
 
 .sidebar-links a {
-    color: #49a6e9; /* Light academic blue link color */
+    color: #49a6e9; /* Light academic blue link color from screenshot */
     text-decoration: none;
 }
 
@@ -127,26 +114,26 @@ nav {
     font-size: 28px;
     font-weight: 700;
     color: #111111;
+    margin-bottom: 20px;
+}
+
+.project-intro {
+    font-size: 16px;
+    color: #444444;
     margin-bottom: 25px;
 }
 
 .content-area h2 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
-    color: #222222;
+    color: #111111;
     border-bottom: 1px solid #e5e7eb;
-    padding-bottom: 4px;
+    padding-bottom: 6px;
+    margin-bottom: 14px;
     margin-top: 30px;
-    margin-bottom: 12px;
 }
 
-.content-area p {
-    font-size: 15px;
-    color: #444444;
-    margin-bottom: 16px;
-}
-
-/* Academic Styled List Items */
+/* Academic Styled Lists matching the theme */
 .academic-list {
     list-style-type: square;
     margin-left: 20px;
@@ -156,15 +143,15 @@ nav {
 }
 
 .academic-list li {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
 
-/* Responsive Graphic Settings */
-.visuals-container {
-    margin-top: 20px;
+/* Visual Mockup Container */
+.visual-wrapper {
+    margin-top: 25px;
 }
 
-.project-display-img {
+.project-main-image {
     max-width: 100%;
     height: auto;
     border: 1px solid #e5e7eb;
@@ -207,10 +194,5 @@ footer {
         flex-direction: column;
         gap: 15px;
         text-align: center;
-    }
-    
-    .logo-container {
-        flex-direction: column;
-        gap: 5px;
     }
 }
