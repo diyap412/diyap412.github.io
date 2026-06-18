@@ -55,7 +55,13 @@ nav {
     gap: 50px;
 }
 
-/* --- Left Sidebar Column --- */
+/* Modifier class to gracefully hide the face/sidebar on project pages */
+.main-container.single-column {
+    display: block;
+    max-width: 800px; /* Gives the article page a comfortable reading measure */
+}
+
+/* --- Left Sidebar Column (Homepage) --- */
 .sidebar {
     width: 240px;
     flex-shrink: 0;
@@ -97,7 +103,7 @@ nav {
 }
 
 .sidebar-links a {
-    color: #49a6e9; /* Light academic blue link color from screenshot */
+    color: #49a6e9;
     text-decoration: none;
 }
 
@@ -133,8 +139,35 @@ nav {
     margin-top: 30px;
 }
 
-/* Academic Styled Lists matching the theme */
-.academic-list {
+/* Academic Project Items & Lists */
+.project-item {
+    margin-bottom: 25px;
+}
+
+.project-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222222;
+    margin-bottom: 5px;
+}
+
+.project-links {
+    font-size: 14px;
+    color: #999999;
+    margin-top: 5px;
+}
+
+.project-links a {
+    color: #49a6e9;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+}
+
+.academic-list, .academic-skills-list {
     list-style-type: square;
     margin-left: 20px;
     font-size: 15px;
@@ -142,11 +175,11 @@ nav {
     margin-bottom: 20px;
 }
 
-.academic-list li {
+.academic-list li, .academic-skills-list li {
     margin-bottom: 8px;
 }
 
-/* Visual Mockup Container */
+/* Image scaling fixes */
 .visual-wrapper {
     margin-top: 25px;
 }
