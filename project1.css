@@ -1,4 +1,4 @@
-/* Reset */
+/* --- Global Reset & Clean Font --- */
 * {
     margin: 0;
     padding: 0;
@@ -6,90 +6,211 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #ffffff;
+    color: #333333;
     line-height: 1.6;
 }
 
-header {
-    background-color: #000000;
-    padding: 15px 20px;
-    color: white;
-}
-
-.navbar {
+/* --- Top Navigation & Fixed Logo Adjustment --- */
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 30px 20px 15px 20px;
+    background: white;
 }
 
-.logo {
-    height: 40px;
-}
-
-nav .btn {
-    background-color: white;
-    color: #0a0a0a;
-    padding: 8px 14px;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-nav .btn:hover {
-    background-color: #e0e0e0;
-}
-
-section#project-1 {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: auto;
-}
-
-.toggle-btn {
-    margin: 20px 0;
-    padding: 10px 15px;
-    background-color: #0a0a0a;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.toggle-btn:hover {
-    background-color: #333;
-}
-
-.project-container {
+.logo-container {
     display: flex;
-    flex-direction: column;
-    gap: 30px;
+    align-items: center;
+    gap: 10px;
 }
 
-.project-img {
+/* Fixed the large image scale issue here */
+.logo-img {
+    height: 24px; 
+    width: auto;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-size: 18px;
+    font-weight: 700;
+    color: #222222;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555555;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+/* --- Master Two-Column Flex Layout --- */
+.main-container {
+    display: flex;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 50px;
+}
+
+/* --- Left Sidebar Column --- */
+.sidebar {
+    width: 240px;
+    flex-shrink: 0;
+}
+
+.sidebar-avatar {
     width: 100%;
-    max-height: 300px;
+    max-width: 200px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
     object-fit: cover;
-    border-radius: 8px;
+    background: #e5e7eb;
+    display: block;
+    margin-bottom: 20px;
 }
 
-.about-text h3 {
-    margin-top: 20px;
-    font-size: 20px;
-    color: #111;
+.sidebar-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 4px;
 }
 
-.about-text ul {
-    margin-top: 10px;
+.sidebar-bio {
+    font-size: 13px;
+    color: #666666;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.sidebar-links {
+    list-style: none;
+    font-size: 14px;
+}
+
+.sidebar-links li {
+    margin-bottom: 10px;
+    color: #444444;
+}
+
+.sidebar-links a {
+    color: #49a6e9; /* Light academic blue link color */
+    text-decoration: none;
+}
+
+.sidebar-links a:hover {
+    text-decoration: underline;
+}
+
+/* --- Right Content Column --- */
+.content-area {
+    flex: 1;
+}
+
+.content-area h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 25px;
+}
+
+.content-area h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #222222;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 4px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+.content-area p {
+    font-size: 15px;
+    color: #444444;
+    margin-bottom: 16px;
+}
+
+/* Academic Styled List Items */
+.academic-list {
+    list-style-type: square;
     margin-left: 20px;
+    font-size: 15px;
+    color: #444444;
+    margin-bottom: 20px;
 }
 
+.academic-list li {
+    margin-bottom: 6px;
+}
+
+/* Responsive Graphic Settings */
+.visuals-container {
+    margin-top: 20px;
+}
+
+.project-display-img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+}
+
+/* --- Clean Border Line Footer --- */
 footer {
-    background-color: #0a0a0a;
-    color: white;
+    max-width: 1140px;
+    margin: 60px auto 30px auto;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 60px;
+    font-size: 13px;
+    color: #888888;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .sidebar-avatar {
+        margin: 0 auto 15px auto;
+    }
+    
+    .sidebar-links {
+        display: inline-block;
+        text-align: left;
+    }
+    
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .logo-container {
+        flex-direction: column;
+        gap: 5px;
+    }
 }
